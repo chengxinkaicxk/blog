@@ -9,5 +9,6 @@ deploy:
   local_dir: blogs/.vuepress/dist # 项目打包后生成的文件的目录
   github-token: $GITHUB_TOKEN # 这里这个变量就是刚才配置 token 时填写的那个变量
   keep-history: true
+  target_branch: master
   on:
     branch: master # 项目源码所在的分支
