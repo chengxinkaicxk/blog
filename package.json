@@ -1,0 +1,29 @@
+{
+  "name": "three-gold",
+  "version": "1.0.0",
+  "description": "三金的blog",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vuepress dev blogs",
+    "docs:build": "vuepress build blogs"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [],
+  "author": "三金",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "element-ui": "^2.4.11",
+    "exceljs": "^1.12.1",
+    "filesaver.js-npm": "^1.0.1",
+    "mavon-editor": "2.6.17"
+  },
+  "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.2.0",
+    "vuepress": "^1.2.0",
+    "vuepress-theme-reco": "^1.2.1"
+  }
+}
