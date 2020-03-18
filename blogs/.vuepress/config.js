@@ -25,6 +25,24 @@ module.exports = {
           bottom:'20px'
         }
       }
+    ],
+    [
+        "@vuepress-reco/vuepress-plugin-bgm-player",
+        {
+            audios:[
+                {
+                    name: '知否知否应是绿肥红瘦',
+                    artist: '胡夏&郁可唯',
+                    url: 'http://www.170mv.com/kw/antiserver.kuwo.cn/anti.s?rid=MUSIC_65193830&response=res&format=mp3|aac&type=convert_url&br=128kmp3&agent=iPhone&callback=getlink&jpcallback=getlink.mp3',
+                    cover: 'https://assets.smallsunnyfox.com/music/2.jpg'
+                }
+            ],
+            position:{
+                left: '10px',
+                bottom: '10px',
+                'z-index': '999999'
+            }
+        }
     ]
   ],
   theme: 'reco',
