@@ -2,9 +2,17 @@ const pluginConf = require('./config/pluginConf.js');
 const navConf = require('./config/navConf.js');
 
 module.exports = {
-  head: [['meta', {name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no'}]],
+  head: [['meta', {name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no'}],
+    ['script', {}, '!(function(w) {\n' +
+    '        var script = document.createElement(\'script\')\n' +
+    '        script.src = \'http://webmonitorback.paas.x/static/monitorUtils-1.0.0.js\'\n' +
+    '        script.async = false\n' +
+    '        document.head.appendChild(script)\n' +
+    '        w._webmonitorOpts = {host: \'http://webmonitorback.paas.x/\', siteKey: \'5ee35428bd3752463f1a2984\', routerType: \'history\'}\n' +
+    '      })(window)']]
+  ,
   title: '木叶村',
-  description: '想做一只会飞的咸鱼',
+  description: '心态决定成败',
   dest: 'public',
   base: '/blog/',
   locales: {

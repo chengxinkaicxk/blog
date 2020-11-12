@@ -1,6 +1,6 @@
 --- 
 title: Linux基础
-date: 2020-03-10
+date: 2020-06-10
 categories: 
  - 其它
 tags: 
@@ -156,3 +156,62 @@ Linux的文件系统目录结构是属于分层树形结构。因此，文件系
 |+/-n|+n表示显示从文件第n行开始的所有行；-n表示显示文件的最后n行|
 |-f|显示完文件的最后一行后，如果文件正在被追加，会继续显示追加的行，直到键入<Ctrl> + C|
 
+### ssh
+> 连接到远程服务器
+
+例：ssh root@ip，后续输入密码
+```javascript
+参数 -p 指定端口(默认22)
+查看是否安装 ssh rpm -qa|grep ssh
+安装ssh远程服务 yun -y install ssh
+```
+
+### scp
+> 将本机文件复制到远程服务器上
+
+命令格式：`scp [参数] sourcefile targetfile`
+
+例：scp abc/a.txt root@id:path
+```javascript
+参数 -p 指定端口(默认22)
+```
+
+### ps
+> 用于显示当前进程 (process) 的状态
+
+命令格式：ps [options] [--help]
+```javascript
+ps -ef 用标准的格式展示所有进程的状态
+```
+### kill
+> 用于删除执行中的程序或工作
+
+kill -9 [PID]
+### yum
+> Shell前端软件包管理工具
+
+命令格式：`yum [options] [command] [package ...]`
+
+- options: 可选，选项包括-h（帮助），-y（当安装过程提示选择全部为"yes"），-q（不显示安装的过程）等等。
+- command: 要进行的操作
+- package: 操作的对象。
+```javascript
+1.列出所有可更新的软件清单命令：yum check-update
+2.更新所有软件命令：yum update
+3.仅安装指定的软件命令：yum install <package_name>
+4.仅更新指定的软件命令：yum update <package_name>
+5.列出所有可安裝的软件清单命令：yum list
+6.删除软件包命令：yum remove <package_name>
+7.查找软件包 命令：yum search <keyword>
+8.清除缓存命令:
+yum clean packages: 清除缓存目录下的软件包
+yum clean headers: 清除缓存目录下的 headers
+yum clean oldheaders: 清除缓存目录下旧的 headers
+yum clean, yum clean all (= yum clean packages; yum clean oldheaders) :清除缓存目录下的软件包及旧的headers
+```
+### lsof
+> 查看端口
+> lsof -i:端口
+>
+### 查看linux系统版本
+> cat /proc/version

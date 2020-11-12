@@ -286,3 +286,11 @@ end$$
 ```
 > `new`表示要插入的一条数据，`old`表示要删除或已更改的一条数据。
 
+
+## 插入更新语句（on duplicate key）
+> 以前的做法是先根据主键去查找是否存在记录，找到就update，找不到就insert。需要写两条语句。
+on duplicate key update 的写法，很简单的解决了上面的问题，而且只需要写一条语句。
+
+insert into employee (id, sex, name ,address) values (103, '女', 'Lisa', 'London') 
+**on duplicate key** update sex = '男', name = 'Tom', address = 'pasa'
+
