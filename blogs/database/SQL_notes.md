@@ -2,9 +2,9 @@
 title: SQL笔记
 date: 2019-10-19
 categories: 
- - database
+ - 数据库
 tags: 
- - database
+ - 数据库
  - SQL
  - 笔记
 ---

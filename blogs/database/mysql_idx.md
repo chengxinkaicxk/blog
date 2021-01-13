@@ -2,9 +2,9 @@
 title: Mysql覆盖索引与回表
 date: 2020-09-09
 categories: 
- - database
+ - 数据库
 tags: 
- - database
+ - 数据库
  - 笔记
 ---
 

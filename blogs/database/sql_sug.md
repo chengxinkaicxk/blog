@@ -2,9 +2,9 @@
 title: 高质量sql建议
 date: 2020-08-03
 categories: 
- - database
+ - 数据库
 tags: 
- - database
+ - 数据库
  - SQL
 ---
 

@@ -1,5 +1,6 @@
 const pluginConf = require('./config/pluginConf.js');
 const navConf = require('./config/navConf.js');
+const sideBarConf = require('./config/sideBar')
 
 module.exports = {
   head: [['meta', {name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no'}],
@@ -59,10 +60,13 @@ module.exports = {
     authorAvatar: '/avatar.jpg',
     logo: '/logo.jpg',
     type: 'blog',
+    // 搜索设置
+    search: true,
     lastUpdated: '上次更新',
     docsDir: 'blogs',
     nav: navConf,
-    sidebar: 'auto',
+    subSidebar: 'auto',
+    sidebar: sideBarConf,
     sidebarDepth: 2,  //2显示三级标题即### 也显示
     blogConfig: {
       category: {
