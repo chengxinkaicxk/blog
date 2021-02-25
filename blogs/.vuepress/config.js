@@ -3,14 +3,16 @@ const navConf = require('./config/navConf.js');
 const sideBarConf = require('./config/sideBar')
 
 module.exports = {
-  head: [['meta', {name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no'}],
-    ['script', {}, '!(function(w) {\n' +
-    '        var script = document.createElement(\'script\')\n' +
-    '        script.src = \'http://webmonitorback.paas.x/static/monitorUtils-1.0.0.js\'\n' +
-    '        script.async = false\n' +
-    '        document.head.appendChild(script)\n' +
-    '        w._webmonitorOpts = {host: \'http://webmonitorback.paas.x/\', siteKey: \'5ee35428bd3752463f1a2984\', routerType: \'history\'}\n' +
-    '      })(window)']]
+  head: [['meta', {name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no'}]
+    //   ,
+    // ['script', {}, '!(function(w) {\n' +
+    // '        var script = document.createElement(\'script\')\n' +
+    // '        script.src = \'http://webmonitorback.paas.x/static/monitorUtils-1.0.0.js\'\n' +
+    // '        script.async = false\n' +
+    // '        document.head.appendChild(script)\n' +
+    // '        w._webmonitorOpts = {host: \'http://webmonitorback.paas.x/\', siteKey: \'5ee35428bd3752463f1a2984\', routerType: \'history\'}\n' +
+    // '      })(window)']
+  ]
   ,
   title: '木叶村',
   description: '心态决定成败',
@@ -67,7 +69,7 @@ module.exports = {
     nav: navConf,
     subSidebar: 'auto',
     sidebar: sideBarConf,
-    sidebarDepth: 2,  //2显示三级标题即### 也显示
+    sidebarDepth: 3,  //2显示三级标题即### 也显示
     blogConfig: {
       category: {
         location: 2,     // 在导航栏菜单中所占的位置，默认2

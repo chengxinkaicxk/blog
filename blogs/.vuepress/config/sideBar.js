@@ -23,5 +23,15 @@ module.exports = {
         'shell'
       ]
     }
+  ],
+  '/middleware/nginx/': [
+    {
+      title: 'Nginx入门',
+      collapsable: true,
+      children: [
+        'nginxInstall',
+        'nginxConf'
+      ]
+    }
   ]
 }
